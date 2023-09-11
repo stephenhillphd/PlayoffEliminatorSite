@@ -13,6 +13,7 @@ website:
         file: analysis.qmd
       - text: "About This Site"
         file: about.qmd
+    google-analytics: "G-8GE1PSV4SC"
 
 format:
   html:
@@ -21,9 +22,7 @@ format:
     toc: true
 
 editor: visual
-
-website:
-  google-analytics: "G-8GE1PSV4SC"
+  
 
 
 
