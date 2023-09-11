@@ -1,0 +1,9 @@
+---
+title: "College Football Playoff Eliminator"
+format: html
+css: styles.css
+---
+
+#### Through Games of September 9th, 2023 {.test}
+
+![](wk2.png)

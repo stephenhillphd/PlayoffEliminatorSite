@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  navbar:
+    background: "#000000"
+    foreground: "#FFFFFF"
+    search: false
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Weekly Analysis"
+        file: analysis.qmd
+      - text: "About This Site"
+        file: about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
+
+
