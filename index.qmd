@@ -5,7 +5,7 @@ format:
     link-external-newwindow: true
 css: styles.css
 website:
-  favicon: favicon.ico
+  favicon: favicon-32x32.png
 ---
 
 #### Through Games of September 9th, 2023 {.test}
