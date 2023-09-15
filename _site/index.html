@@ -133,6 +133,10 @@ gtag('config', 'G-8GE1PSV4SC', { 'anonymize_ip': true});
 <section id="through-games-of-september-9th-2023" class="level4 test">
 <h4 class="test anchored" data-anchor-id="through-games-of-september-9th-2023">Through Games of September 9th, 2023</h4>
 <p><img src="wk2.png" class="img-fluid"></p>
+<hr>
+<div style="text-align:center">
+<p><a href="https://ko-fi.com/stephenhill42026">Like the site? Click here to buy the site’s creator a coffee at Ko-Fi.</a> <!-- more links here --></p>
+</div>
 
 
 </section>
@@ -369,6 +373,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       });
     }
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+      }
+    }
 });
 </script>
 </div> <!-- /content -->
