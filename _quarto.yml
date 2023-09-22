@@ -9,11 +9,7 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      - text: "Weekly Analysis"
-        file: analysis.qmd
-      - text: "About This Site"
-        file: about.qmd
-  google-analytics: "G-8GE1PSV4SC"
+  #google-analytics: "G-8GE1PSV4SC"
 
 format:
   html:
