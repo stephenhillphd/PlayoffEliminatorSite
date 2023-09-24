@@ -1,13 +1,17 @@
 ---
-title: "USL Championship Playoff Eliminator"
+title: "College Football Playoff Eliminator"
 format: 
   html:
     link-external-newwindow: true
 css: styles.css
 ---
 
-#### Through Games of September 21st, 2023 {.test}
+#### Through Games of September 17th, 2023 {.test}
 
-![](21Sep2023.png)
+![](wk3.png)
 
 ------------------------------------------------------------------------
+
+::: {style="text-align:center"}
+<a href="https://ko-fi.com/stephenhill42026">Like the site? Support the site by buying a coffee at Ko-Fi.</a>
+:::
