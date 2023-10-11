@@ -6,9 +6,9 @@ format:
 css: styles.css
 ---
 
-#### Through Games of September 30th, 2023 {.test}
+#### Through Games of October 6th, 2023 {.test}
 
-![](wk5.png)
+![](wk6.png)
 
 ------------------------------------------------------------------------
 
