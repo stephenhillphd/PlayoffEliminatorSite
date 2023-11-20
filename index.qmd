@@ -6,7 +6,7 @@ format:
 css: styles.css
 ---
 
-#### Through Games of November 11, 2023 {.test}
+#### Through Games of November 18, 2023 {.test}
 
 ![](wk11.png)
 
