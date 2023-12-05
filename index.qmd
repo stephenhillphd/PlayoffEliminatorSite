@@ -6,9 +6,9 @@ format:
 css: styles.css
 ---
 
-#### Through Games of November 25, 2023 {.test}
+#### Final 2023 Update - Through Games of December 2nd, 2023 {.test}
 
-![](wk12.png)
+![](wk13.png)
 
 ------------------------------------------------------------------------
 
