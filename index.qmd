@@ -6,7 +6,7 @@ format:
 css: styles.css
 ---
 
-#### Final 2023 Update - Through Games of December 2nd, 2023 {.test}
+#### Preseason 2024 {.test}
 
 ![](wk13.png)
 
