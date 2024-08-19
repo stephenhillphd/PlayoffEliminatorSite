@@ -2,20 +2,18 @@
 title: "About This Site"
 ---
 
-Welcome to the College Football Playoff Eliminator! Here we track our best guesses as to which teams have been eliminated from College Football Playoff (CFP) contention. We can make these guesses by leaning heavily on the history of the CFP selection process. In general, we can summarize the selection criteria with a few simple bullet points. In order to be in serious CFP contention your team needs to be:
+Welcome to the College Football Playoff Eliminator! Beginning with the 2023 college football season, we have been tracking which teams have been eliminated from College Football Playoff (CFP) contention.
 
--   An undefeated Power 5 conference (ACC, Big 10, Big 12, Pac-12 or SEC) champion
+The 12 team playoff format will shake up the elimination process and completely re-write any "rules of thumb" that we could use to identify eliminated teams from four team playoff era. Join us as we venture into this new reality and do our best to eliminate the unworthy and retain teams that have a shot at postseason glory!
 
-    -   No undefeated Power 5 conference champion has been excluded from the CFP
+**The 12 Team Playoff**
 
--   A one-loss Power 5 conference champion
+The 12 team version of the CFP will be populated by teams via two methods:
 
-    -   Three one-loss Power 5 champions have been excluded from the CFP since its inception is 2014. Two of those teams were from the Big 12 in 2014 (Baylor and TCU shared the Big 12 title and the conference did not hold a conference championship game). Ohio State was excluded in 2018. The Buckeyes' one loss that season was a particularly ugly 49-20 beatdown by Purdue.
+* The five highest ranked (in the CFP rankings) conference champions will receive entry into the CFP.
+* The next seven highest ranked teams will also receive bids to the CFP.
 
--   An undefeated Group of 5 (American, Conference USA, Mid-American, Mountain West, and Sun Belt)
+The top four conference champions will receive a first-round bye. The remaining eight teams will play in first round matchups at campus sites.
 
-    -   There have been seven undefeated Group of 5 conference champions since the start of the playoff. Only one was selected for the CFP (Cincinnati in 2021). None of the others were particularly close to being selected, but there is still a glimmer of hope if your team goes undefeated and can manage a couple of wins against Power 5 opposition along the way.
 
-No two-loss team (Power 5 or otherwise; conference champion or otherwise) has ever been selected for the CFP. Alabama came close in 2022, finishing 5th in the final CFP rankings.
 
-Of course, all of this will change with the implementation of the 12-team CFP in 2024. Until then, let's weep or cheer as our team or our rival has their hopes of CFP glory dashed.
