@@ -2,6 +2,7 @@ project:
   type: website
 
 website:
+  # Removed the title from the navbar
   navbar:
     background: "#000000"
     foreground: "#FFFFFF"
@@ -13,17 +14,13 @@ website:
         file: analysis.qmd
       - text: "About"
         file: about.qmd
-  google-analytics: "G-8GE1PSV4SC"
-  favicon: favicon.png
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
+    page-layout: custom
 
-editor: visual
-  
-
-
-
+google-analytics: "G-8GE1PSV4SC"
+favicon: favicon.png

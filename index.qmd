@@ -1,26 +1,28 @@
 ---
 title: "College Football Playoff Eliminator"
-format: 
-  html:
-    link-external-newwindow: true
-    toc: false
-css: styles.css
 ---
 
-### Week 4 {.test}
+### Week 5
 
-#### 90 Teams Remain in the Race for the College Football Playoff
+#### 85 Teams Remain in the Race for the College Football Playoff
 
-------------------------------------------------------------------------
+![](wk5_2024.png)
 
-![](wk4_2024.png)
+---
 
-------------------------------------------------------------------------
+<!-- Centered Ko-Fi Button -->
+<div style="text-align: center; margin-top: 20px;">
+  <a href="https://ko-fi.com/stephenhill42026" class="kofi-button" target="_blank">
+    Like the site? Support the site by buying a coffee at Ko-Fi.
+  </a>
+</div>
 
-::: {style="text-align:center"}
-<a href="https://ko-fi.com/stephenhill42026">Like the site? Support the site by buying a coffee at Ko-Fi.</a>
-:::
+| Moneyball | Basketball on Paper | Mathletics |
+|:---------:|:----------:|:------------------:|
+| [![Moneyball](moneyball.jpg){.book-image}](https://amzn.to/3Brep3F) | [![Basketball on Paper](bbpaper.jpg){.book-image}](https://amzn.to/4dq4Nn3) | [![Mathletics](mathletics.jpg){.book-image}](https://amzn.to/4gIzDu3) |
+| [Buy Moneyball on Amazon](https://amzn.to/3Brep3F) | [Buy Basketball on Paper on Amazon](https://amzn.to/4gIzDu3) | [Buy Mathletics on Amazon](https://amzn.to/4gIzDu3) |
 
 ::: {style="text-align:center"}
 This site is for entertainment purposes and is not affiliated with the College Football Playoff.
+
 :::

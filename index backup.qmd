@@ -1,0 +1,26 @@
+---
+title: "College Football Playoff Eliminator"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: false
+css: styles.css
+---
+
+### Week 5 {.test}
+
+#### 85 Teams Remain in the Race for the College Football Playoff
+
+------------------------------------------------------------------------
+
+![](wk5_2024.png)
+
+------------------------------------------------------------------------
+
+::: {style="text-align:center"}
+<a href="https://ko-fi.com/stephenhill42026">Like the site? Support the site by buying a coffee at Ko-Fi.</a>
+:::
+
+::: {style="text-align:center"}
+This site is for entertainment purposes and is not affiliated with the College Football Playoff.
+:::
