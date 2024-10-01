@@ -9,11 +9,11 @@ website:
     search: false
     left:
       - text: "Home"
-        file: index.qmd
+        file: index.html
       - text: "Weekly Analysis"
-        file: analysis.qmd
+        file: analysis.html
       - text: "About"
-        file: about.qmd
+        file: about.html
 
 format:
   html:

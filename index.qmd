@@ -1,5 +1,10 @@
 ---
 title: "College Football Playoff Eliminator"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: false
+css: styles.css
 ---
 
 ### Week 5
