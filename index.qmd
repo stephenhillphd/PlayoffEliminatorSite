@@ -17,12 +17,14 @@ title: "College Football Playoff Eliminator"
   </a>
 </div>
 
+#### Want to learn more about Sports Analytics? Start with these books.
+
 | Moneyball | Basketball on Paper | Mathletics |
 |:---------:|:----------:|:------------------:|
 | [![Moneyball](moneyball.jpg){.book-image}](https://amzn.to/3Brep3F) | [![Basketball on Paper](bbpaper.jpg){.book-image}](https://amzn.to/4dq4Nn3) | [![Mathletics](mathletics.jpg){.book-image}](https://amzn.to/4gIzDu3) |
 | [Buy Moneyball on Amazon](https://amzn.to/3Brep3F) | [Buy Basketball on Paper on Amazon](https://amzn.to/4gIzDu3) | [Buy Mathletics on Amazon](https://amzn.to/4gIzDu3) |
 
 ::: {style="text-align:center"}
-This site is for entertainment purposes and is not affiliated with the College Football Playoff.
+This site is for entertainment purposes only and is not affiliated with the College Football Playoff.
 
 :::
