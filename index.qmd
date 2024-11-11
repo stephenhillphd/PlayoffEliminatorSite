@@ -7,11 +7,11 @@ format:
 css: styles.css
 ---
 
-### Week 10
+### Week 11
 
-#### 32 Teams Remain in the Race for the College Football Playoff
+#### 27 Teams Remain in the Race for the College Football Playoff
 
-![](wk10_2024.png)
+![](wk11_2024.png)
 
 ---
 
