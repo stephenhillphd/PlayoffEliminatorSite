@@ -3,6 +3,7 @@ project:
 
 website:
   # Removed the title from the navbar
+  google-analytics: "G-8GE1PSV4SC"
   navbar:
     background: "#000000"
     foreground: "#FFFFFF"
@@ -22,5 +23,4 @@ format:
     toc: false
     page-layout: custom
 
-google-analytics: "G-8GE1PSV4SC"
 favicon: favicon.png
