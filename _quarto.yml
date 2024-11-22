@@ -2,8 +2,8 @@ project:
   type: website
 
 website:
-  # Removed the title from the navbar
-  google-analytics: "G-8GE1PSV4SC"
+  google-analytics: 
+    tracking-id: "G-8GE1PSV4SC"
   navbar:
     background: "#000000"
     foreground: "#FFFFFF"
