@@ -23,7 +23,7 @@ css: styles.css
   </a>
 </div>
 
-#### Want to learn more about Sports Analytics? These books are a great place to start.
+#### Want to learn more about Sports Analytics? These books are a great place to start!
 
 | Moneyball | Basketball on Paper | Mathletics |
 |:---------:|:----------:|:------------------:|
