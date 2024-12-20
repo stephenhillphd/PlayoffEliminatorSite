@@ -13,6 +13,10 @@ website:
         file: index.html
       - text: "Weekly Analysis"
         file: analysis.html
+      - text: "Predictions"
+        file: predictions.html
+      - text: "Archive"
+        file: archive.html
       - text: "About"
         file: about.html
 
