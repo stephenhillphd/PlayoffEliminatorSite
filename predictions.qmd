@@ -1,0 +1,14 @@
+---
+title: "CFP Predictions"
+---
+
+Welcome to the College Football Playoff Eliminator! Beginning with the 2023 college football season, we have been tracking which teams have been eliminated from College Football Playoff (CFP) contention.
+
+[![](banner.jpg)](https://amzn.to/3OcowMU)
+
+### 2024 CFP Predictions
+
+Below are the results of 10,000 Monte Carlo simulations of the 2024 CFP.
+
+![](cfp12_fill.png)
+
