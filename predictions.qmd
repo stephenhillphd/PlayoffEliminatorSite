@@ -8,5 +8,6 @@ title: "CFP Predictions"
 
 Below are the results of 10,000 Monte Carlo simulations of the 2024 CFP. We'll update the simulation model after each game is played.
 
-![](cfp12_fill.png)
+Here we see the CFP simulation results after the Notre Dame/Indiana game. Notre Dame's national championship chances improve from 11.8% to 16%. 
+![](cfp12_fill_PostND.png)
 
