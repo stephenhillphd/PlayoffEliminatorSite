@@ -8,9 +8,7 @@ title: "CFP Predictions"
 
 Below are the results of 10,000 Monte Carlo simulations of the 2024 CFP. We'll update the simulation model after each game is played.
 
-Here we see the CFP simulation results after Penn State defeated Boise State, Texas survived Arizona State, and Ohio State routed Oregon.
+Here we see the CFP simulation results the Quarterfinals. Notre Dame is the current favorite to win the national title. 
 
-Penn State is the (slight) current favorite to win the national championship.
-
-![](cfp12_fill_PostOSUUO.png)
+![](cfp12_fill_PostNDGA.png)
 
