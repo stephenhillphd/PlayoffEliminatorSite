@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.54">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>redesign_analysis</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-SWLL1S2Y3F"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-SWLL1S2Y3F', { 'anonymize_ip': true});
+</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./analysis.html"> 
+<span class="menu-text">Weekly Analysis</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./predictions.html"> 
+<span class="menu-text">Predictions</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./archive.html"> 
+<span class="menu-text">Archive</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+<!-- main -->
+
+
+
+
+<section id="college-football-playoff-eliminator---comprehensive-redesign-analysis" class="level1">
+<h1>College Football Playoff Eliminator - Comprehensive Redesign Analysis</h1>
+<section id="current-state-assessment" class="level2">
+<h2 data-anchor-id="current-state-assessment">Current State Assessment</h2>
+<section id="technology-stack" class="level3">
+<h3 data-anchor-id="technology-stack">Technology Stack</h3>
+<ul>
+<li><strong>Platform</strong>: Quarto website (R-based static site generator)</li>
+<li><strong>Theme</strong>: Cosmo with custom CSS</li>
+<li><strong>Analytics</strong>: Google Analytics (G-SWLL1S2Y3F)</li>
+<li><strong>Hosting</strong>: Static site (likely GitHub Pages or similar)</li>
+</ul>
+</section>
+<section id="current-site-structure" class="level3">
+<h3 data-anchor-id="current-site-structure">Current Site Structure</h3>
+<pre><code>├── Home (index.qmd) - Main elimination tracker
+├── Weekly Analysis - Detailed weekly elimination explanations
+├── Predictions - Monte Carlo CFP simulation results
+├── Archive - Historical data from previous seasons
+└── About - Site explanation and playoff format details</code></pre>
+</section>
+<section id="current-features" class="level3">
+<h3 data-anchor-id="current-features">Current Features</h3>
+<ol type="1">
+<li><strong>Core Functionality</strong>
+<ul>
+<li>Weekly team elimination tracking</li>
+<li>Visual playoff bracket/elimination charts</li>
+<li>Historical archive of past seasons</li>
+<li>Monte Carlo simulation predictions</li>
+<li>Affiliate marketing (Amazon books, Ko-Fi donations)</li>
+</ul></li>
+<li><strong>Content Types</strong>
+<ul>
+<li>PNG elimination charts (weekly updates)</li>
+<li>Written analysis and explanations</li>
+<li>Book recommendations with affiliate links</li>
+<li>Support/donation integration</li>
+</ul></li>
+</ol>
+</section>
+<section id="current-issues-identified" class="level3">
+<h3 data-anchor-id="current-issues-identified">Current Issues Identified</h3>
+<section id="mobile-experience-problems" class="level4">
+<h4 data-anchor-id="mobile-experience-problems">Mobile Experience Problems</h4>
+<ol type="1">
+<li><strong>Poor Mobile Layout</strong>
+<ul>
+<li>Fixed table layouts don’t work well on small screens</li>
+<li>Book recommendation table uses fixed widths (33.33%)</li>
+<li>Large images (charts) difficult to view on mobile</li>
+<li>Ko-Fi button styling could be more mobile-friendly</li>
+</ul></li>
+<li><strong>Navigation Issues</strong>
+<ul>
+<li>Black navbar may be hard to use in bright light</li>
+<li>No mobile-specific navigation considerations</li>
+<li>Search is disabled</li>
+</ul></li>
+<li><strong>Image Optimization</strong>
+<ul>
+<li>Large PNG files (500KB+) slow to load on mobile data</li>
+<li>No responsive image handling</li>
+<li>Charts may be unreadable at small sizes</li>
+</ul></li>
+</ol>
+</section>
+<section id="content-management-challenges" class="level4">
+<h4 data-anchor-id="content-management-challenges">Content Management Challenges</h4>
+<ol type="1">
+<li><strong>Manual Updates Required</strong>
+<ul>
+<li>Weekly chart generation and upload</li>
+<li>Manual content updates in QMD files</li>
+<li>No automated data integration</li>
+</ul></li>
+<li><strong>Limited Interactivity</strong>
+<ul>
+<li>Static charts only</li>
+<li>No filtering or sorting capabilities</li>
+<li>No user engagement features</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+</section>
+<section id="proposed-redesign-strategy" class="level2">
+<h2 data-anchor-id="proposed-redesign-strategy">Proposed Redesign Strategy</h2>
+<section id="mobile-first-responsive-design" class="level3">
+<h3 data-anchor-id="mobile-first-responsive-design">1. Mobile-First Responsive Design</h3>
+<section id="navigation-improvements" class="level4">
+<h4 data-anchor-id="navigation-improvements">Navigation Improvements</h4>
+<ul>
+<li><strong>Hamburger Menu</strong>: Implement collapsible mobile navigation</li>
+<li><strong>Sticky Header</strong>: Keep navigation accessible while scrolling</li>
+<li><strong>Better Color Scheme</strong>: High contrast with light/dark mode toggle</li>
+<li><strong>Quick Actions</strong>: Add floating action buttons for key features</li>
+</ul>
+</section>
+<section id="layout-enhancements" class="level4">
+<h4 data-anchor-id="layout-enhancements">Layout Enhancements</h4>
+<ul>
+<li><strong>Card-Based Design</strong>: Replace tables with responsive cards</li>
+<li><strong>Progressive Disclosure</strong>: Collapsible sections for detailed content</li>
+<li><strong>Touch-Friendly</strong>: Larger tap targets (minimum 44px)</li>
+<li><strong>Swipe Gestures</strong>: Horizontal swipe for chart navigation</li>
+</ul>
+</section>
+<section id="image-optimization" class="level4">
+<h4 data-anchor-id="image-optimization">Image Optimization</h4>
+<ul>
+<li><strong>WebP Format</strong>: Convert PNGs to WebP for better compression</li>
+<li><strong>Responsive Images</strong>: Multiple sizes with srcset</li>
+<li><strong>Lazy Loading</strong>: Load images as needed</li>
+<li><strong>Interactive Charts</strong>: Replace static PNGs with interactive SVG/Canvas</li>
+</ul>
+</section>
+</section>
+<section id="enhanced-user-experience" class="level3">
+<h3 data-anchor-id="enhanced-user-experience">2. Enhanced User Experience</h3>
+<section id="improved-content-discovery" class="level4">
+<h4 data-anchor-id="improved-content-discovery">Improved Content Discovery</h4>
+<ul>
+<li><strong>Search Functionality</strong>: Enable and enhance site search</li>
+<li><strong>Filtering</strong>: Filter teams by conference, status, etc.</li>
+<li><strong>Timeline View</strong>: Visual timeline of eliminations</li>
+<li><strong>Team Pages</strong>: Individual team elimination stories</li>
+</ul>
+</section>
+<section id="interactive-features" class="level4">
+<h4 data-anchor-id="interactive-features">Interactive Features</h4>
+<ul>
+<li><strong>Live Updates</strong>: Real-time elimination status</li>
+<li><strong>Notifications</strong>: Push notifications for major eliminations</li>
+<li><strong>Social Sharing</strong>: Easy sharing of elimination updates</li>
+<li><strong>Comments</strong>: Community discussion on eliminations</li>
+</ul>
+</section>
+</section>
+<section id="content-management-improvements" class="level3">
+<h3 data-anchor-id="content-management-improvements">3. Content Management Improvements</h3>
+<section id="automation-opportunities" class="level4">
+<h4 data-anchor-id="automation-opportunities">Automation Opportunities</h4>
+<ul>
+<li><strong>Data Integration</strong>: Connect to sports APIs for automatic updates</li>
+<li><strong>Chart Generation</strong>: Automated chart creation from data</li>
+<li><strong>Scheduled Publishing</strong>: Automatic weekly content publication</li>
+<li><strong>Backup Systems</strong>: Automated content backups</li>
+</ul>
+</section>
+<section id="admin-interface" class="level4">
+<h4 data-anchor-id="admin-interface">Admin Interface</h4>
+<ul>
+<li><strong>CMS Integration</strong>: Headless CMS for easier content management</li>
+<li><strong>Preview Mode</strong>: Preview changes before publishing</li>
+<li><strong>Version Control</strong>: Track content changes</li>
+<li><strong>Analytics Dashboard</strong>: Integrated analytics and insights</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="specific-new-features-to-add" class="level2">
+<h2 data-anchor-id="specific-new-features-to-add">Specific New Features to Add</h2>
+<section id="interactive-elimination-tracker" class="level3">
+<h3 data-anchor-id="interactive-elimination-tracker">1. Interactive Elimination Tracker</h3>
+<pre><code>Features:
+- Real-time team status updates
+- Interactive bracket/tree visualization
+- Click-to-expand team details
+- Conference-based filtering
+- Historical comparison view</code></pre>
+</section>
+<section id="enhanced-mobile-features" class="level3">
+<h3 data-anchor-id="enhanced-mobile-features">2. Enhanced Mobile Features</h3>
+<pre><code>Features:
+- Progressive Web App (PWA) capabilities
+- Offline reading capability
+- Push notifications for eliminations
+- Touch-optimized charts and navigation
+- Voice search functionality</code></pre>
+</section>
+<section id="community-engagement" class="level3">
+<h3 data-anchor-id="community-engagement">3. Community Engagement</h3>
+<pre><code>Features:
+- User predictions and voting
+- Discussion threads for each elimination
+- Social media integration
+- Email newsletter signup
+- User-generated content submissions</code></pre>
+</section>
+<section id="advanced-analytics-insights" class="level3">
+<h3 data-anchor-id="advanced-analytics-insights">4. Advanced Analytics &amp; Insights</h3>
+<pre><code>Features:
+- Team strength ratings over time
+- Elimination probability calculator
+- Conference performance tracking
+- Historical trend analysis
+- Customizable dashboards</code></pre>
+</section>
+<section id="monetization-enhancements" class="level3">
+<h3 data-anchor-id="monetization-enhancements">5. Monetization Enhancements</h3>
+<pre><code>Features:
+- Premium subscription tier
+- Enhanced affiliate integration
+- Sponsored content sections
+- Merchandise store integration
+- Patron/subscriber benefits</code></pre>
+</section>
+<section id="accessibility-performance" class="level3">
+<h3 data-anchor-id="accessibility-performance">6. Accessibility &amp; Performance</h3>
+<pre><code>Features:
+- Screen reader optimization
+- Keyboard navigation
+- High contrast mode
+- Font size adjustment
+- WCAG 2.1 AA compliance</code></pre>
+<hr>
+</section>
+</section>
+<section id="technical-implementation-recommendations" class="level2">
+<h2 data-anchor-id="technical-implementation-recommendations">Technical Implementation Recommendations</h2>
+<section id="short-term-keep-quarto-enhance-mobile" class="level3">
+<h3 data-anchor-id="short-term-keep-quarto-enhance-mobile">Short-term (Keep Quarto, Enhance Mobile)</h3>
+<ol type="1">
+<li><strong>Responsive CSS Framework</strong>: Implement CSS Grid and Flexbox</li>
+<li><strong>Image Optimization</strong>: Compress and serve responsive images</li>
+<li><strong>Progressive Enhancement</strong>: Add JavaScript for enhanced features</li>
+<li><strong>Performance Optimization</strong>: Minimize CSS/JS, implement caching</li>
+</ol>
+</section>
+<section id="medium-term-hybrid-approach" class="level3">
+<h3 data-anchor-id="medium-term-hybrid-approach">Medium-term (Hybrid Approach)</h3>
+<ol type="1">
+<li><strong>Static Site Generator Upgrade</strong>: Consider Next.js or Nuxt.js</li>
+<li><strong>Headless CMS</strong>: Integrate Strapi, Contentful, or similar</li>
+<li><strong>API Integration</strong>: Connect to ESPN, sports APIs for live data</li>
+<li><strong>Analytics Enhancement</strong>: Custom tracking for user engagement</li>
+</ol>
+</section>
+<section id="long-term-full-modernization" class="level3">
+<h3 data-anchor-id="long-term-full-modernization">Long-term (Full Modernization)</h3>
+<ol type="1">
+<li><strong>React/Vue Frontend</strong>: Modern JavaScript framework</li>
+<li><strong>Node.js Backend</strong>: API for data management</li>
+<li><strong>Database Integration</strong>: PostgreSQL or MongoDB for historical data</li>
+<li><strong>Cloud Infrastructure</strong>: AWS/Vercel deployment with CDN</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="design-system-recommendations" class="level2">
+<h2 data-anchor-id="design-system-recommendations">Design System Recommendations</h2>
+<section id="color-palette" class="level3">
+<h3 data-anchor-id="color-palette">Color Palette</h3>
+<div class="sourceCode" id="cb8"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>Primary<span class="in">:</span> <span class="pp">#1B365D</span> <span class="in">(</span>Deep Blue - playoff tradition<span class="in">)</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>Secondary<span class="in">:</span> <span class="pp">#FF6B35</span> <span class="in">(</span>Orange - energy/excitement<span class="in">)</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>Accent<span class="in">:</span> <span class="pp">#F7F052</span> <span class="in">(</span>Yellow - highlighting<span class="in">)</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>Neutral<span class="in">:</span> <span class="pp">#2E3440</span> <span class="in">(</span>Dark Gray<span class="in">)</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>Success<span class="in">:</span> <span class="pp">#28A745</span> <span class="in">(</span>Green - still alive<span class="in">)</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>Danger<span class="in">:</span> <span class="pp">#DC3545</span> <span class="in">(</span>Red - eliminated<span class="in">)</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>Background<span class="in">:</span> <span class="pp">#FFFFFF</span> / <span class="pp">#1E1E1E</span> <span class="in">(</span>Light/Dark modes<span class="in">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="typography" class="level3">
+<h3 data-anchor-id="typography">Typography</h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>Headings<span class="in">:</span> Inter <span class="in">(</span>modern<span class="op">,</span> readable<span class="in">)</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>Body<span class="in">:</span> Source Sans Pro <span class="in">(</span>excellent readability<span class="in">)</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>Monospace<span class="in">:</span> Fira Code <span class="in">(</span>for data/stats<span class="in">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="component-library" class="level3">
+<h3 data-anchor-id="component-library">Component Library</h3>
+<ul>
+<li>Cards for team status</li>
+<li>Badges for elimination status</li>
+<li>Progress bars for playoff probability</li>
+<li>Tooltips for detailed information</li>
+<li>Modals for team details</li>
+<li>Carousels for chart navigation</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="content-strategy-recommendations" class="level2">
+<h2 data-anchor-id="content-strategy-recommendations">Content Strategy Recommendations</h2>
+<section id="expand-team-coverage" class="level3">
+<h3 data-anchor-id="expand-team-coverage">1. Expand Team Coverage</h3>
+<ul>
+<li>Individual team pages with elimination stories</li>
+<li>Conference-specific analysis pages</li>
+<li>Recruiting impact on playoff chances</li>
+<li>Historical team performance data</li>
+</ul>
+</section>
+<section id="enhanced-analysis-content" class="level3">
+<h3 data-anchor-id="enhanced-analysis-content">2. Enhanced Analysis Content</h3>
+<ul>
+<li>Video content explaining eliminations</li>
+<li>Podcast integration for weekly discussions</li>
+<li>Guest expert analysis</li>
+<li>Fan prediction contests</li>
+</ul>
+</section>
+<section id="seo-content-marketing" class="level3">
+<h3 data-anchor-id="seo-content-marketing">3. SEO &amp; Content Marketing</h3>
+<ul>
+<li>Weekly SEO-optimized articles</li>
+<li>Social media content calendar</li>
+<li>Email newsletter with exclusive insights</li>
+<li>Cross-promotion with sports blogs</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="implementation-timeline" class="level2">
+<h2 data-anchor-id="implementation-timeline">Implementation Timeline</h2>
+<section id="phase-1-immediate---2-4-weeks" class="level3">
+<h3 data-anchor-id="phase-1-immediate---2-4-weeks">Phase 1 (Immediate - 2-4 weeks)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Mobile CSS improvements</label></li>
+<li><label><input type="checkbox">Image optimization and compression</label></li>
+<li><label><input type="checkbox">Basic responsive navigation</label></li>
+<li><label><input type="checkbox">Performance optimization</label></li>
+</ul>
+</section>
+<section id="phase-2-short-term---1-2-months" class="level3">
+<h3 data-anchor-id="phase-2-short-term---1-2-months">Phase 2 (Short-term - 1-2 months)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Interactive chart implementation</label></li>
+<li><label><input type="checkbox">Search functionality</label></li>
+<li><label><input type="checkbox">Social sharing features</label></li>
+<li><label><input type="checkbox">Basic PWA features</label></li>
+</ul>
+</section>
+<section id="phase-3-medium-term---3-4-months" class="level3">
+<h3 data-anchor-id="phase-3-medium-term---3-4-months">Phase 3 (Medium-term - 3-4 months)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">CMS integration</label></li>
+<li><label><input type="checkbox">API data connections</label></li>
+<li><label><input type="checkbox">User accounts and preferences</label></li>
+<li><label><input type="checkbox">Advanced analytics</label></li>
+</ul>
+</section>
+<section id="phase-4-long-term---6-months" class="level3">
+<h3 data-anchor-id="phase-4-long-term---6-months">Phase 4 (Long-term - 6+ months)</h3>
+<ul class="task-list">
+<li><label><input type="checkbox">Complete platform modernization</label></li>
+<li><label><input type="checkbox">Advanced interactive features</label></li>
+<li><label><input type="checkbox">Community features</label></li>
+<li><label><input type="checkbox">Premium subscription model</label></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="success-metrics" class="level2">
+<h2 data-anchor-id="success-metrics">Success Metrics</h2>
+<section id="user-experience" class="level3">
+<h3 data-anchor-id="user-experience">User Experience</h3>
+<ul>
+<li>Mobile bounce rate &lt; 40%</li>
+<li>Page load time &lt; 3 seconds</li>
+<li>Mobile usability score &gt; 95%</li>
+<li>User session duration increase &gt; 50%</li>
+</ul>
+</section>
+<section id="engagement" class="level3">
+<h3 data-anchor-id="engagement">Engagement</h3>
+<ul>
+<li>Weekly active users increase &gt; 100%</li>
+<li>Social shares increase &gt; 200%</li>
+<li>Email subscribers &gt; 1,000</li>
+<li>Return visitor rate &gt; 60%</li>
+</ul>
+</section>
+<section id="business" class="level3">
+<h3 data-anchor-id="business">Business</h3>
+<ul>
+<li>Ko-Fi donations increase &gt; 150%</li>
+<li>Affiliate conversion rate &gt; 3%</li>
+<li>Ad revenue (if implemented) &gt; $500/month</li>
+<li>Premium subscriptions (if implemented) &gt; 100 users</li>
+</ul>
+<hr>
+<p>This comprehensive analysis provides a roadmap for transforming your College Football Playoff Eliminator into a modern, mobile-first, highly engaging sports analytics platform while maintaining its core appeal and expanding its reach.</p>
+
+
+</section>
+</section>
+</section>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

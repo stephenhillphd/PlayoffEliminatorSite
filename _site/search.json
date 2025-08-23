@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "REDESIGN_ANALYSIS.html#current-state-assessment",
+    "href": "REDESIGN_ANALYSIS.html#current-state-assessment",
+    "title": "",
+    "section": "Current State Assessment",
+    "text": "Current State Assessment\n\nTechnology Stack\n\nPlatform: Quarto website (R-based static site generator)\nTheme: Cosmo with custom CSS\nAnalytics: Google Analytics (G-SWLL1S2Y3F)\nHosting: Static site (likely GitHub Pages or similar)\n\n\n\nCurrent Site Structure\n├── Home (index.qmd) - Main elimination tracker\n├── Weekly Analysis - Detailed weekly elimination explanations\n├── Predictions - Monte Carlo CFP simulation results\n├── Archive - Historical data from previous seasons\n└── About - Site explanation and playoff format details\n\n\nCurrent Features\n\nCore Functionality\n\nWeekly team elimination tracking\nVisual playoff bracket/elimination charts\nHistorical archive of past seasons\nMonte Carlo simulation predictions\nAffiliate marketing (Amazon books, Ko-Fi donations)\n\nContent Types\n\nPNG elimination charts (weekly updates)\nWritten analysis and explanations\nBook recommendations with affiliate links\nSupport/donation integration\n\n\n\n\nCurrent Issues Identified\n\nMobile Experience Problems\n\nPoor Mobile Layout\n\nFixed table layouts don’t work well on small screens\nBook recommendation table uses fixed widths (33.33%)\nLarge images (charts) difficult to view on mobile\nKo-Fi button styling could be more mobile-friendly\n\nNavigation Issues\n\nBlack navbar may be hard to use in bright light\nNo mobile-specific navigation considerations\nSearch is disabled\n\nImage Optimization\n\nLarge PNG files (500KB+) slow to load on mobile data\nNo responsive image handling\nCharts may be unreadable at small sizes\n\n\n\n\nContent Management Challenges\n\nManual Updates Required\n\nWeekly chart generation and upload\nManual content updates in QMD files\nNo automated data integration\n\nLimited Interactivity\n\nStatic charts only\nNo filtering or sorting capabilities\nNo user engagement features"
+  },
+  {
+    "objectID": "REDESIGN_ANALYSIS.html#proposed-redesign-strategy",
+    "href": "REDESIGN_ANALYSIS.html#proposed-redesign-strategy",
+    "title": "",
+    "section": "Proposed Redesign Strategy",
+    "text": "Proposed Redesign Strategy\n\n1. Mobile-First Responsive Design\n\nNavigation Improvements\n\nHamburger Menu: Implement collapsible mobile navigation\nSticky Header: Keep navigation accessible while scrolling\nBetter Color Scheme: High contrast with light/dark mode toggle\nQuick Actions: Add floating action buttons for key features\n\n\n\nLayout Enhancements\n\nCard-Based Design: Replace tables with responsive cards\nProgressive Disclosure: Collapsible sections for detailed content\nTouch-Friendly: Larger tap targets (minimum 44px)\nSwipe Gestures: Horizontal swipe for chart navigation\n\n\n\nImage Optimization\n\nWebP Format: Convert PNGs to WebP for better compression\nResponsive Images: Multiple sizes with srcset\nLazy Loading: Load images as needed\nInteractive Charts: Replace static PNGs with interactive SVG/Canvas\n\n\n\n\n2. Enhanced User Experience\n\nImproved Content Discovery\n\nSearch Functionality: Enable and enhance site search\nFiltering: Filter teams by conference, status, etc.\nTimeline View: Visual timeline of eliminations\nTeam Pages: Individual team elimination stories\n\n\n\nInteractive Features\n\nLive Updates: Real-time elimination status\nNotifications: Push notifications for major eliminations\nSocial Sharing: Easy sharing of elimination updates\nComments: Community discussion on eliminations\n\n\n\n\n3. Content Management Improvements\n\nAutomation Opportunities\n\nData Integration: Connect to sports APIs for automatic updates\nChart Generation: Automated chart creation from data\nScheduled Publishing: Automatic weekly content publication\nBackup Systems: Automated content backups\n\n\n\nAdmin Interface\n\nCMS Integration: Headless CMS for easier content management\nPreview Mode: Preview changes before publishing\nVersion Control: Track content changes\nAnalytics Dashboard: Integrated analytics and insights"
+  },
+  {
+    "objectID": "REDESIGN_ANALYSIS.html#specific-new-features-to-add",
+    "href": "REDESIGN_ANALYSIS.html#specific-new-features-to-add",
+    "title": "",
+    "section": "Specific New Features to Add",
+    "text": "Specific New Features to Add\n\n1. Interactive Elimination Tracker\nFeatures:\n- Real-time team status updates\n- Interactive bracket/tree visualization\n- Click-to-expand team details\n- Conference-based filtering\n- Historical comparison view\n\n\n2. Enhanced Mobile Features\nFeatures:\n- Progressive Web App (PWA) capabilities\n- Offline reading capability\n- Push notifications for eliminations\n- Touch-optimized charts and navigation\n- Voice search functionality\n\n\n3. Community Engagement\nFeatures:\n- User predictions and voting\n- Discussion threads for each elimination\n- Social media integration\n- Email newsletter signup\n- User-generated content submissions\n\n\n4. Advanced Analytics & Insights\nFeatures:\n- Team strength ratings over time\n- Elimination probability calculator\n- Conference performance tracking\n- Historical trend analysis\n- Customizable dashboards\n\n\n5. Monetization Enhancements\nFeatures:\n- Premium subscription tier\n- Enhanced affiliate integration\n- Sponsored content sections\n- Merchandise store integration\n- Patron/subscriber benefits\n\n\n6. Accessibility & Performance\nFeatures:\n- Screen reader optimization\n- Keyboard navigation\n- High contrast mode\n- Font size adjustment\n- WCAG 2.1 AA compliance"
+  },
+  {
+    "objectID": "REDESIGN_ANALYSIS.html#technical-implementation-recommendations",
+    "href": "REDESIGN_ANALYSIS.html#technical-implementation-recommendations",
+    "title": "",
+    "section": "Technical Implementation Recommendations",
+    "text": "Technical Implementation Recommendations\n\nShort-term (Keep Quarto, Enhance Mobile)\n\nResponsive CSS Framework: Implement CSS Grid and Flexbox\nImage Optimization: Compress and serve responsive images\nProgressive Enhancement: Add JavaScript for enhanced features\nPerformance Optimization: Minimize CSS/JS, implement caching\n\n\n\nMedium-term (Hybrid Approach)\n\nStatic Site Generator Upgrade: Consider Next.js or Nuxt.js\nHeadless CMS: Integrate Strapi, Contentful, or similar\nAPI Integration: Connect to ESPN, sports APIs for live data\nAnalytics Enhancement: Custom tracking for user engagement\n\n\n\nLong-term (Full Modernization)\n\nReact/Vue Frontend: Modern JavaScript framework\nNode.js Backend: API for data management\nDatabase Integration: PostgreSQL or MongoDB for historical data\nCloud Infrastructure: AWS/Vercel deployment with CDN"
+  },
+  {
+    "objectID": "REDESIGN_ANALYSIS.html#design-system-recommendations",
+    "href": "REDESIGN_ANALYSIS.html#design-system-recommendations",
+    "title": "",
+    "section": "Design System Recommendations",
+    "text": "Design System Recommendations\n\nColor Palette\nPrimary: #1B365D (Deep Blue - playoff tradition)\nSecondary: #FF6B35 (Orange - energy/excitement)\nAccent: #F7F052 (Yellow - highlighting)\nNeutral: #2E3440 (Dark Gray)\nSuccess: #28A745 (Green - still alive)\nDanger: #DC3545 (Red - eliminated)\nBackground: #FFFFFF / #1E1E1E (Light/Dark modes)\n\n\nTypography\nHeadings: Inter (modern, readable)\nBody: Source Sans Pro (excellent readability)\nMonospace: Fira Code (for data/stats)\n\n\nComponent Library\n\nCards for team status\nBadges for elimination status\nProgress bars for playoff probability\nTooltips for detailed information\nModals for team details\nCarousels for chart navigation"
+  },
+  {
+    "objectID": "REDESIGN_ANALYSIS.html#content-strategy-recommendations",
+    "href": "REDESIGN_ANALYSIS.html#content-strategy-recommendations",
+    "title": "",
+    "section": "Content Strategy Recommendations",
+    "text": "Content Strategy Recommendations\n\n1. Expand Team Coverage\n\nIndividual team pages with elimination stories\nConference-specific analysis pages\nRecruiting impact on playoff chances\nHistorical team performance data\n\n\n\n2. Enhanced Analysis Content\n\nVideo content explaining eliminations\nPodcast integration for weekly discussions\nGuest expert analysis\nFan prediction contests\n\n\n\n3. SEO & Content Marketing\n\nWeekly SEO-optimized articles\nSocial media content calendar\nEmail newsletter with exclusive insights\nCross-promotion with sports blogs"
+  },
+  {
+    "objectID": "REDESIGN_ANALYSIS.html#implementation-timeline",
+    "href": "REDESIGN_ANALYSIS.html#implementation-timeline",
+    "title": "",
+    "section": "Implementation Timeline",
+    "text": "Implementation Timeline\n\nPhase 1 (Immediate - 2-4 weeks)\n\nMobile CSS improvements\nImage optimization and compression\nBasic responsive navigation\nPerformance optimization\n\n\n\nPhase 2 (Short-term - 1-2 months)\n\nInteractive chart implementation\nSearch functionality\nSocial sharing features\nBasic PWA features\n\n\n\nPhase 3 (Medium-term - 3-4 months)\n\nCMS integration\nAPI data connections\nUser accounts and preferences\nAdvanced analytics\n\n\n\nPhase 4 (Long-term - 6+ months)\n\nComplete platform modernization\nAdvanced interactive features\nCommunity features\nPremium subscription model"
+  },
+  {
+    "objectID": "REDESIGN_ANALYSIS.html#success-metrics",
+    "href": "REDESIGN_ANALYSIS.html#success-metrics",
+    "title": "",
+    "section": "Success Metrics",
+    "text": "Success Metrics\n\nUser Experience\n\nMobile bounce rate &lt; 40%\nPage load time &lt; 3 seconds\nMobile usability score &gt; 95%\nUser session duration increase &gt; 50%\n\n\n\nEngagement\n\nWeekly active users increase &gt; 100%\nSocial shares increase &gt; 200%\nEmail subscribers &gt; 1,000\nReturn visitor rate &gt; 60%\n\n\n\nBusiness\n\nKo-Fi donations increase &gt; 150%\nAffiliate conversion rate &gt; 3%\nAd revenue (if implemented) &gt; $500/month\nPremium subscriptions (if implemented) &gt; 100 users\n\n\nThis comprehensive analysis provides a roadmap for transforming your College Football Playoff Eliminator into a modern, mobile-first, highly engaging sports analytics platform while maintaining its core appeal and expanding its reach."
+  }
+]

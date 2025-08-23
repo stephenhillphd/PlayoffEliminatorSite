@@ -6,13 +6,11 @@ format:
     toc: false
 css: styles.css
 ---
-[![](banner.jpg)](https://amzn.to/3OcowMU)
+### Preseason 2025
 
-### Final 2024
+#### 135 Teams Remain
 
-#### 12 Teams Remain
-
-![](wk15_2024.png)
+![](wk0_2025.png)
 
 ---
 
@@ -27,8 +25,8 @@ css: styles.css
 
 | Moneyball | Basketball on Paper | Mathletics |
 |:---------:|:----------:|:------------------:|
-| [![Moneyball](moneyball.jpg){.book-image}](https://amzn.to/3Brep3F) | [![Basketball on Paper](bbpaper.jpg){.book-image}](https://amzn.to/4dq4Nn3) | [![Mathletics](mathletics.jpg){.book-image}](https://amzn.to/4gIzDu3) |
-| [Buy Moneyball on Amazon](https://amzn.to/3Brep3F) | [Buy Basketball on Paper on Amazon](https://amzn.to/4gIzDu3) | [Buy Mathletics on Amazon](https://amzn.to/4gIzDu3) |
+| [![Moneyball](moneyball.jpg){.book-image}](https://amzn.to/4fQZ38S) | [![Basketball on Paper](bbpaper.jpg){.book-image}](https://amzn.to/4g0gUdt) | [![Mathletics](mathletics.jpg){.book-image}](https://amzn.to/45L77Dl) |
+| [Buy Moneyball on Amazon](https://amzn.to/4fQZ38S) | [Buy Basketball on Paper on Amazon](https://amzn.to/4g0gUdt) | [Buy Mathletics on Amazon](https://amzn.to/45L77Dl) |
 
 ::: {style="text-align:center"}
 This site is for entertainment purposes only and is not affiliated with the College Football Playoff.

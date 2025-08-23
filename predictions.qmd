@@ -2,13 +2,5 @@
 title: "CFP Predictions"
 ---
 
-[![](banner.jpg)](https://amzn.to/3OcowMU)
-
-### 2024 CFP Prediction Model
-
-Below are the results of 10,000 Monte Carlo simulations of the 2024 CFP. We'll update the simulation model after each game is played.
-
-The National Championship game is set.   
-
-![](cfp12_fill_PostOSUTX.png)
+### Coming Soon
 
