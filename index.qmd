@@ -6,11 +6,11 @@ format:
     toc: false
 css: styles.css
 ---
-### Preseason 2025
+### Week 1 2025
 
-#### 135 Teams Remain
+#### 134 Teams Remain
 
-![](wk0_2025.png)
+![](wk1_2025.png)
 
 ---
 

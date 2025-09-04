@@ -10,10 +10,49 @@ The 12 team playoff format will shake up the elimination process and completely 
 
 The 12 team version of the CFP will be populated by teams via two methods:
 
-* The five highest ranked (in the CFP rankings) conference champions will receive entry into the CFP.
-* The next seven highest ranked teams will also receive bids to the CFP.
+-   The five highest ranked (in the CFP rankings) conference champions will receive entry into the CFP.
+-   The next seven highest ranked teams will also receive bids to the CFP.
 
-As of 2025, the teams are seeded via a "straight seed" approach with the top four seeds (conference champions or not) receiving byes to the quarterfinals. 
+As of 2025, the teams are seeded via a "straight seed" approach with the top four seeds (conference champions or not) receiving byes to the quarterfinals.
 
+**How Does the College Football Playoff Eliminator Work?**
 
+The 12-team College Football Playoff gives each Football Bowl Subdivision (FBS) team two possible paths to the postseason:
 
+*Automatic Bids*
+
+The **five highest-ranked conference champions** automatically qualify for the CFP.
+
+For teams in the Power 4 (P4) conferences (SEC, Big Ten, ACC, Big 12): → Win your conference and you’re in — even with three losses. When we look at the 2024 12 team playoff and the hypothetical 12 team playoffs from 2014 through 2023, only one P4 conference champion (Oregon in the 2020 COVID season) would have missed the playoff. To be clear, the SEC, the Big Ten, the ACC, and Big 12 do NOT have automatic bids to the CFP, but will almost always send their champion to the playoff.
+
+For Group of 5 (G5) teams (AAC, Sun Belt, C-USA, Mountain West, MAC): → The highest-ranked G5 champion receives an automatic bid to the CFP.
+
+Independent teams like Notre Dame cannot earn an automatic bid.
+
+*At-Large Bids*
+
+The **seven remaining spots** in the CFP are awarded to the **highest-ranked teams** that didn’t win their conference. The at-large path for teams from the P4 conferences is very different than for teams from the G5 conferences. For P4 teams:
+
+-   **0–1 losses**: historically a **near-lock** for at-large selection.
+
+-   **2 losses**: still very possible if ranked in the **Top 10–12** of the final CFP rankings.
+
+-   **3 losses**: 14 P4 teams since 2014 would have made the playoffs with at-large bids.
+
+-   **4+ losses**: No P4 team with four or more losses would have ever made the playoff as an at-large team. Is it possible? Maybe, but unlikely.
+
+For G5 teams, the path to an at-large bid is very narrow. No G5 team has or would have made the CFP with an at-large bid. An undefeated G5 team with a strong strength of schedule could be in the mix for an at-large bid. 
+
+We need to take a moment to address the special case that is Notre Dame. Notre Dame is independent and cannot get an automatic bid. However, they are treated like a P4 team for at-large access to the CFP. 
+
+*Summary*
+A team is mathematically/effectively eliminated when:
+
+Automatic bid path is gone:
+* Can’t reach its conference championship or
+* Wouldn’t be ranked high enough to finish in the top five champions.
+
+At-large path is unrealistic:
+* Power 4: 4+ losses or too far outside CFP Top 12 as rankings are revealed.
+* Group of 5: no chance to be the highest-ranked G5 champion.
+* Notre Dame: Treated as a P4 team for at-large consideration.
