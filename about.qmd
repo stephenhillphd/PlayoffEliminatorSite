@@ -41,18 +41,20 @@ The **seven remaining spots** in the CFP are awarded to the **highest-ranked tea
 
 -   **4+ losses**: No P4 team with four or more losses would have ever made the playoff as an at-large team. Is it possible? Maybe, but unlikely.
 
-For G5 teams, the path to an at-large bid is very narrow. No G5 team has or would have made the CFP with an at-large bid. An undefeated G5 team with a strong strength of schedule could be in the mix for an at-large bid. 
+For G5 teams, the path to an at-large bid is very narrow. No G5 team has or would have made the CFP with an at-large bid. An undefeated G5 team with a strong strength of schedule could be in the mix for an at-large bid.
 
-We need to take a moment to address the special case that is Notre Dame. Notre Dame is independent and cannot get an automatic bid. However, they are treated like a P4 team for at-large access to the CFP. 
+We need to take a moment to address the special case that is Notre Dame. Notre Dame is independent and cannot get an automatic bid. However, they are treated like a P4 team for at-large access to the CFP.
 
 *Summary*
+
 A team is mathematically/effectively eliminated when:
 
-Automatic bid path is gone:
-* Can’t reach its conference championship or
-* Wouldn’t be ranked high enough to finish in the top five champions.
+Automatic bid path is gone: The team cannot reach its conference championship or the team will not be able to be ranked high enough to finish in the top five conference champions.
 
 At-large path is unrealistic:
-* Power 4: 4+ losses or too far outside CFP Top 12 as rankings are revealed.
-* Group of 5: no chance to be the highest-ranked G5 champion.
-* Notre Dame: Treated as a P4 team for at-large consideration.
+
+Power 4: 4+ losses or too far outside CFP Top 12 as rankings are revealed.
+
+Group of 5: no chance to be the highest-ranked G5 champion.
+
+Notre Dame: Treated as a P4 team for at-large consideration.
