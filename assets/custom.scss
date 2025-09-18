@@ -1,0 +1,141 @@
+/*-- scss:rules --*/
+
+/* Hero */
+.hero {
+  background: linear-gradient(180deg, #0b132b 0%, #1c2541 100%);
+  color: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+.hero-inner { max-width: 900px; margin: 0 auto; }
+.hero .tag { opacity: .9; margin: .5rem 0 1.25rem; }
+.hero-ctas .btn { margin: 0 .4rem; }
+
+/*-- scss:rules --*/
+
+.author-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: #f8f9fa;   /* subtle card background */
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.author-avatar {
+  width: 120px;         /* reasonable size */
+  height: 120px;
+  border-radius: 50%;   /* circular crop */
+  object-fit: cover;    /* crop without distortion */
+  flex-shrink: 0;
+}
+
+/* Clickable cards */
+.card-link { text-decoration: none; color: inherit; border-radius: 16px; border: 1px solid #e9ecef; transition: transform .08s ease, box-shadow .08s ease; }
+.card-link:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+
+/* Books grid (simple, responsive list) */
+.books-grid { display: grid; gap: .5rem; list-style: none; padding: 0; }
+.books-grid li { background: #f8f9fa; padding: .75rem 1rem; border-radius: 12px; }
+
+/* Fine-tune headings on mobile */
+@media (max-width: 576px){
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.25rem; }
+  .content p { line-height: 1.55; }
+}
+
+@media (max-width: 576px) {
+  .author-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Hero buttons styling */
+.hero-ctas {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.hero-ctas .btn {
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Primary button */
+.hero-ctas .btn-primary {
+  background-color: #2d74da;
+  border-color: #2d74da;
+}
+.hero-ctas .btn-primary:hover {
+  background-color: #1b4f9c;
+  border-color: #1b4f9c;
+}
+
+/* Secondary outline button */
+.hero-ctas .btn-outline-secondary {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+.hero-ctas .btn-outline-secondary:hover {
+  background-color: #ffffff;
+  color: #0d1b2a;
+}
+
+/* On small screens: stack vertically and center */
+@media (max-width: 576px) {
+  .hero-ctas {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-ctas .btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+}
+
+/* Center the hero section */
+.hero {
+  text-align: center;          /* center text inside hero */
+  padding: 3rem 1rem;          /* spacing top/bottom + breathing room */
+  background: linear-gradient(135deg, #0d1b2a, #1b263b); /* subtle dark gradient */
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.hero .tag {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  color: #e0e6ed;              /* softer gray text */
+}
+
+/* Centered hero buttons (from earlier rules) */
+.hero-ctas {
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+.hero-ctas .btn {
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+
+
+/* Reserve space for any in-article ad slots (avoids layout shift) */
+.ad-slot { min-height: 220px; }
+@media (max-width: 576px){ .ad-slot { min-height: 160px; } }

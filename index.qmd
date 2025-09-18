@@ -6,11 +6,11 @@ format:
     toc: false
 css: styles.css
 ---
-### Week 2 2025
+### Week 3 2025
 
-#### 121 Teams Remain
+#### 105 Teams Remain
 
-![](wk2_2025.png)
+![](wk3_2025.png)
 
 ---
 

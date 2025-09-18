@@ -2,29 +2,30 @@ project:
   type: website
 
 website:
-  google-analytics: 
-    tracking-id: "G-SWLL1S2Y3F"
+  title: "CFP Eliminator"
+  google-analytics: "G-SWLL1S2Y3F"   # <— replace with your real ID
   navbar:
-    background: "#000000"
-    foreground: "#FFFFFF"
-    search: false
     left:
-      - text: "Home"
-        file: index.html
-      - text: "Weekly Analysis"
-        file: analysis.html
-      - text: "Predictions"
-        file: predictions.html
-      - text: "Archive"
-        file: archive.html
-      - text: "About"
-        file: about.html
+      - text: Home
+        href: index.qmd
+      - text: Weekly Analysis
+        href: analysis.qmd
+      - text: Poll
+        href: poll.qmd
+      - text: About
+        href: about.qmd
+  search: true
+  page-footer:
+    left: "© 2025 Illumined Analytics"
+    right: |
+      <a href="mailto:hello@cfpeliminator.com">Contact</a> · 
+      <a href="/privacy.html">Privacy</a>
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      - cosmo
+      - assets/custom.scss
+    page-layout: article
+    smooth-scroll: true
     toc: false
-    page-layout: custom
-
-favicon: favicon.png
