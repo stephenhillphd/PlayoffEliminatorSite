@@ -27,6 +27,47 @@
   background-color: #003d82;
 }
 
+/* --- Ad Banner Styles --- */
+
+.ad-container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Default: Mobile styles first */
+.ad-banner-desktop {
+  display: none; /* Hide desktop ad by default */
+}
+
+.ad-banner-mobile {
+  display: block; /* Show mobile ad by default */
+  width: 320px;
+  height: 50px;
+  /* Optional: Add a border to visualize the ad space */
+  border: 1px dashed #ccc; 
+  text-align: center;
+  line-height: 50px;
+}
+
+/* Media Query for tablets and desktops */
+@media (min-width: 768px) {
+  .ad-banner-desktop {
+    display: block; /* Show desktop ad on larger screens */
+    width: 728px;
+    height: 90px;
+    /* Optional: Add a border to visualize the ad space */
+    border: 1px dashed #ccc;
+    text-align: center;
+    line-height: 90px;
+  }
+
+  .ad-banner-mobile {
+    display: none; /* Hide mobile ad on larger screens */
+  }
+}
+
 /* Book Section Styles */
 table {
   width: 100%;

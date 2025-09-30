@@ -10,6 +10,21 @@ css: styles.css
 
 #### 89 Teams Remain
 
+```{=html}
+<div class="ad-container">
+  <div class="ad-banner-desktop">
+    <a href="[https://amzn.to/48CTTM0](https://amzn.to/48CTTM0)" target="_blank">
+      <img src="images/what-if-banner-728x90.png" alt="Ad for the book What If by Matt Brown">
+    </a>
+  </div>
+  <div class="ad-banner-mobile">
+    <a href="[https://amzn.to/48CTTM0](https://amzn.to/48CTTM0)" target="_blank">
+      <img src="images/what-if-banner-320x50.png" alt="Ad for the book What If by Matt Brown">
+    </a>
+  </div>
+</div>
+```
+
 ![](wk4_2025.png)
 
 ---
