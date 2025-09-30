@@ -25,7 +25,7 @@ css: styles.css
 </div>
 ```
 
-![](wk4_2025.png) https://amzn.to/48CTTM0
+![](wk4_2025.png) 
 
 ---
 
