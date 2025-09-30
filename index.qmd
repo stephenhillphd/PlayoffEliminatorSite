@@ -25,8 +25,8 @@ css: styles.css
 
 | Moneyball | Basketball on Paper | Mathletics |
 |:---------:|:----------:|:------------------:|
-| [![Moneyball](moneyball.jpg){.book-image}](https://amzn.to/4fQZ38S) | [![Basketball on Paper](bbpaper.jpg){.book-image}](https://amzn.to/4g0gUdt) | [![Mathletics](mathletics.jpg){.book-image}](https://amzn.to/45L77Dl) |
-| [Buy Moneyball on Amazon](https://amzn.to/4fQZ38S) | [Buy Basketball on Paper on Amazon](https://amzn.to/4g0gUdt) | [Buy Mathletics on Amazon](https://amzn.to/45L77Dl) |
+| [![Moneyball](moneyball.jpg){.book-image}](https://amzn.to/4gOpV9L) | [![Basketball on Paper](bbpaper.jpg){.book-image}](https://amzn.to/42lwuL7) | [![Mathletics](mathletics.jpg){.book-image}](https://amzn.to/3Irdggy) |
+| [Buy Moneyball on Amazon](https://amzn.to/4gOpV9L) | [Buy Basketball on Paper on Amazon](https://amzn.to/42lwuL7) | [Buy Mathletics on Amazon](https://amzn.to/3Irdggy) |
 
 ::: {style="text-align:center"}
 This site is for entertainment purposes only and is not affiliated with the College Football Playoff.
