@@ -6,9 +6,9 @@ format:
     toc: false
 css: styles.css
 ---
-### Week 6 2025
+### Week 7 2025
 
-#### 80 Teams Remain
+#### 77 Teams Remain
 
 ```{=html}
 <div class="ad-container">
