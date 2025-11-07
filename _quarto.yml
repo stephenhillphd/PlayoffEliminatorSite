@@ -10,6 +10,8 @@ website:
         href: index.qmd
       - text: Weekly Analysis
         href: analysis.qmd
+      - text: Bracket
+        href: bracket.qmd
       - text: Poll
         href: poll.qmd
       - text: About
