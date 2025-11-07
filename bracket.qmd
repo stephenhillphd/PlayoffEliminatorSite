@@ -1,5 +1,10 @@
 ---
 title: "Bracket"
+format: 
+  html:
+    link-external-newwindow: true
+    toc: false
+css: styles.css
 ---
 
 Here we provide a look at the bracket as it currently stands (given the most recent CFP rankings). 
