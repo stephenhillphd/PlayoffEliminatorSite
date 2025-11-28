@@ -13,7 +13,7 @@ The CFP features 12 teams. Five spots in the playoff are awarded to the five hig
 
 For the 2025 playoff teams are "straight-seeded" from 1 to 12. The 5, 6, 7, and 8 seeds host First Round playoff games on campus. The remainder of the games are hosted at traditional bowl sites.
 
-![](cfp_bracket_current_wk12.png) 
+![](cfp_bracket_current_wk13.png) 
 ```{=html}
 <div class="ad-container">
   <div class="ad-banner-desktop">
