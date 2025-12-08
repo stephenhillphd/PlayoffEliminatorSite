@@ -14,6 +14,8 @@ website:
         href: bracket.qmd
       - text: Poll
         href: poll.qmd
+      - text: Articles
+        href: articles.qmd
       - text: About
         href: about.qmd
   search: true

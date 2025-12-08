@@ -1,0 +1,28 @@
+---
+title: "Articles"
+---
+
+**Hypothetical Brackets**
+
+For our first article we take a look at hypotheticsl CFP brackets for 2025. Let's take a look at how the BCS (2 teams), four team CFP, and hypothetical 16 and 24 teams playoffs would look. We use the CPF rankings to seed the teams. For the 24 team bracket, we use the PEAR Ratings (https://pearatings.com/cfb/fbs) to seed the conference champions that are outside of the CFP Top 25.
+
+*BCS: 2 Teams*
+
+The Bowl Championship Series matched the top two ranked teams using a rating system comprised of comptuer and human polls. No auto-bids. The BCS was used from 1998 through 2013 and was not without its detractors and controversies. No Group of Five team was ever realistically close to inclusion in the BCS championship game. For 2025, the BCS would yield a re-match of **Indiana and Ohio State**.
+
+*Original CFP: 4 Teams*
+
+The CFP with four teams (no auto bids) began in 2014 and ended in 2023. Only one Group of Five team (Cincinnati in 2021) every made the playoff in this format. 
+
+![](cfp_bracket_4_team.png)
+*Modified CFP: 16 Teams*
+
+For this hypothetical bracket, we'll assume that the automatics bids from the current CFP format (top five conference champions) remain the same. We just add four more at-large teams. 
+
+![](cfp_bracket_16_team.png) 
+
+*Modified CFP: 24 Teams*
+
+This hypothetical format is modeled after the Football Championship Subdivision (FCS) playoff format. Each conference receives an automatic bid for their champion. The remaining teams are at-large. It seems likely that conference championship games would go away in this format. 
+
+![](cfp_bracket_24_team.png) 
