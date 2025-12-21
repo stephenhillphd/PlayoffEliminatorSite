@@ -2,6 +2,12 @@
 title: "Articles"
 ---
 
+**CFP Simulation (After First Round)**
+
+The First Round of the College Football Playoff is complete and Alabama, Miami, Ole Miss, and Oregon have all survived and advanced to the Quarterfinals. We've updated our simulation model after the First Round results.
+
+![](cfp_2025_sim_table_r1.png)
+
 **CFP Simulation (Before First Round)**
 
 As we did last year, we simulated the CFP using Monte Carlo simulation with win probabilities for each potential match-up derived from the Massey Ratings (<https://masseyratings.com/>). Massey's ratings have looked favorably on Ohio State all season and this translates to the Buckeyes having the highest probability to win the National Championship. We'll update these projections as the playoff unfolds.
