@@ -2,6 +2,12 @@
 title: "Articles"
 ---
 
+**CFP Simulation (After Quarterfinals)**
+
+The Semifinals of the College Football Playoff are now set. Indiana will face Oregon in an all-Big Ten rematch and Ole Miss will face Miami. Indiana is the new favorite to win its first national title. 
+
+![](cfp_2025_sim_table_qf.png)
+
 **CFP Simulation (After First Round)**
 
 The First Round of the College Football Playoff is complete and Alabama, Miami, Ole Miss, and Oregon have all survived and advanced to the Quarterfinals. We've updated our simulation model after the First Round results.
